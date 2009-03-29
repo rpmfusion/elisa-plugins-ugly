@@ -3,7 +3,7 @@
 Summary: Ugly Plugins for the Elisa Media Center
 Name: elisa-plugins-ugly
 Version: 0.3.5
-Release: 3%{?dist}
+Release: 4%{?dist}
 License: GPLv3
 Group: Applications/Multimedia
 URL: http://elisa.fluendo.com/
@@ -58,6 +58,9 @@ This package contains the ugly set of plugins for the Elisa Media Center.
 
 
 %changelog
+* Sun Mar 29 2009 Thorsten Leemhuis <fedora [AT] leemhuis [DOT] info> - 0.3.5-4
+- rebuild for new F11 features
+
 * Sun Oct 19 2008 Thorsten Leemhuis <fedora [AT] leemhuis [DOT] info - 0.3.5-3
 - rebuild for RPM Fusion
 
