@@ -2,7 +2,7 @@
 
 Summary: Ugly Plugins for the Elisa Media Center
 Name: elisa-plugins-ugly
-Version: 0.5.30
+Version: 0.5.35
 Release: 1%{?dist}
 License: GPLv3
 Group: Applications/Multimedia
@@ -45,9 +45,7 @@ plugins which might present licensing or other similar issues.
 
 %install
 %{__rm} -rf %{buildroot}
-%{__python} setup.py install \
-    --single-version-externally-managed \
-    -O1 --skip-build --root %{buildroot}
+%{__python} setup.py install -O1 --skip-build --root %{buildroot}
 
 
 %clean
@@ -64,6 +62,10 @@ plugins which might present licensing or other similar issues.
 
 
 %changelog
+* Wed Apr 15 2009 Matthias Saou <http://freshrpms.net/> 0.5.35-1
+- Update to 0.5.35.
+- Drop the useless --single-version-externally-managed option.
+
 * Tue Mar  3 2009 Matthias Saou <http://freshrpms.net/> 0.5.30-1
 - Update to 0.5.30.
 
